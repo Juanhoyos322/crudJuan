@@ -31,10 +31,10 @@ class ArticuloController extends Controller
     {
         $articulos = new Articulo();
 
-        $articulos->$nombre = $request->get('nombre');
-        $articulos->$cedula = $request->get('cedula');
-        $articulos->$direccion = $request->get('direccion');
-        $articulos->$telefono = $request->get('telefono');
+        $articulos->nombre = $request->get('nombre');
+        $articulos->cedula = $request->get('cedula');
+        $articulos->direccion = $request->get('direccion');
+        $articulos->telefono = $request->get('telefono');
 
         $articulos->save();
  
@@ -65,10 +65,10 @@ class ArticuloController extends Controller
     {
         $articulo = Articulo::find($id);
 
-        $articulo->$nombre = $request->get('nombre');
-        $articulo->$cedula = $request->get('cedula');
-        $articulo->$direccion = $request->get('direccion');
-        $articulo->$telefono = $request->get('telefono');
+        $articulo->nombre = $request->get('nombre');
+        $articulo->cedula = $request->get('cedula');
+        $articulo->direccion = $request->get('direccion');
+        $articulo->telefono = $request->get('telefono');
 
         $articulo->save();
  

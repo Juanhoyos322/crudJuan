@@ -1,6 +1,6 @@
 @extends('layouts.plantillabase');
 
-@section('contenido')
+@section('contenido') 
 <h1>EDITAR INFORMACION</h1>
 <form action="/articulos/{{$articulo->id}}" method="POST">
     @csrf

@@ -24,7 +24,7 @@
             <td>{{$articulo->direccion}}</td>
             <td>{{$articulo->telefono}}</td>
             <td>
-                <form action="{{ route ('articulos.destroy', $articulo->$id) }}">
+                <form action="{{ route ('articulos.destroy', $articulo->id) }}" method="POST">
                 <a href="/articulos/{{$articulo->id}}/edit" class="btn btn-info">editar</a>
                 @csrf
                 @method('DELETE')
